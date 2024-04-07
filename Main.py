@@ -44,62 +44,21 @@ def main():
     edges_greedy = Utils.get_edges_count(summary_dag_greedy, nodes, dag)
 
 
-    #
-    # start = time.time()
-    # summary_dag_k_snap = K_SANP.k_snap(dag, k, similarity_df)
-    # end = time.time()
-    # print("time k-snap: ", end - start)
-    #Utils.show_dag(summary_dag_k_snap, 'k-snap')
-
-    #print(recursive_basis_opt)
-
-    #print("#############")
-    #print(recursive_basis_greedy)
-    #print('############')
-
-    #recursive_basis_k_snap = Utils.get_recursive_basis(summary_dag_k_snap, nodes)
-    # edges_ksnap = Utils.get_edges_count(summary_dag_k_snap, nodes, dag)
-    #print(recursive_basis_k_snap)
 
 
     # print("greedy: ", edges_greedy)
-    # print("k-snap: ", edges_ksnap)
     # print("opt: ", edges_opt)
     # print("random: ", edges_rand)
-    # print('recursive basis opt: ')
-    # print(recursive_basis_opt)
-    # print('$$$$$$$$$$$$$$$$$$$$$$$$$$$')
-    # print('recursive basis greedy: ')
-    # print(recursive_basis_greedy)
-    # print('$$$$$$$$$$$$$$$$$$$$$$$$$$$')
-    # print('recursive basis k-snap: ')
-    # print(recursive_basis_k_snap)
-    # # print('$$$$$$$$$$$$$$$$$$$$$$$$$$$')
-    # # print('recursive basis rand: ')
-    # # print(recursive_basis_rand)
-    #
-    # print('greedy -> k-snap: ',Utils.check_how_much_is_implied(nodes, recursive_basis_greedy,
-    #                                                    recursive_basis_k_snap))
-    # #
-    # print('k-snap -> greedy: ', Utils.check_how_much_is_implied(nodes,
-    #                                                    recursive_basis_k_snap,recursive_basis_greedy))
+    
+   
     # print('greedy -> opt: ', Utils.check_how_much_is_implied(nodes, recursive_basis_greedy,
     #                                                             recursive_basis_opt))
     #
     # print('opt -> greedy: ', Utils.check_how_much_is_implied(nodes,
     #                                                             recursive_basis_opt, recursive_basis_greedy))
     #
-    # print('k-snap -> opt: ', Utils.check_how_much_is_implied(nodes, recursive_basis_k_snap,
-    #                                                          recursive_basis_opt))
-    #
-    # print('opt -> k-snap: ', Utils.check_how_much_is_implied(nodes,
-    #                                                          recursive_basis_opt, recursive_basis_k_snap))
-    # #
-    # print('opt-> rand: ', Utils.check_how_much_is_implied(nodes, recursive_basis_opt,
-    #                                                             recursive_basis_rand))
-    #
-    # print('rand -> opt: ', Utils.check_how_much_is_implied(nodes,
-    #                                                             recursive_basis_rand, recursive_basis_opt))
+ 
+  
     #
     # print('opt-> rand: ', Utils.check_if_contain(nodes, recursive_basis_opt,
     #                                                       recursive_basis_rand))
