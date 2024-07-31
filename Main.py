@@ -9,12 +9,13 @@ import Random
 
 
 def main():
+    #use other examples in the Example file
     dag, k, nodes, recursive_basis , similarity_df = Examples.flights()#Examples.random_dag(50,0.3)
 
 
-    print(nx.is_directed_acyclic_graph(dag))
+    # print(nx.is_directed_acyclic_graph(dag))
     # Utils.show_dag(dag, 'original')
-
+    #summary DAG by brute force (the optimal causal DAG)
     start = time.time()
     summary_dag_opt, recursive_basis_opt = BruteForce.BF(dag, nodes, recursive_basis, k, similarity_df)
     end = time.time()
@@ -23,7 +24,7 @@ def main():
     Utils.show_dag(summary_dag_opt, "summary_dag_opt")
 
 
-
+    #a random summary DAG with k nodes
     start = time.time()
     summary_dag_random = Random.Random(dag, nodes, recursive_basis, k, similarity_df)
     end = time.time()
@@ -33,6 +34,7 @@ def main():
     recursive_basis_rand = Utils.get_recursive_basis(summary_dag_random, nodes)
 
 
+    #our summary DAG 
     start = time.time()
     summary_dag_greedy, recursive_basis_greedy = Greedy.greedy(dag, nodes, recursive_basis, k, similarity_df)
     end = time.time()
