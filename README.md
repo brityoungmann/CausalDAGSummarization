@@ -1,7 +1,8 @@
-# CausalDAGSummarization
-Causal DAG Summarization
+# Causal DAG Summarization
+Causal DAG Summarization: This code provides an implementation of our proposed CaGres algorithm. To run the code, use the example usage in the main.py file. 
 
-Requirements: 
+
+# Requirements
 contourpy==1.2.0
 cycler==0.12.1
 dowhy==0.8
