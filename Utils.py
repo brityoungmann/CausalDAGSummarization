@@ -137,14 +137,14 @@ def a_valid_pair(node1,node2,dag, similarity_df, summary_dag):
         G.remove_edge(node2, node1)
     if nx.has_path(G, node1, node2):
             length =  nx.shortest_path_length(G, node1, node2)
-            if length >= 3:
+            if length >= 2:
             # paths = nx.all_simple_paths(summary_dag, node1, node2)
             # path_exists = any(len(path) >= 3 for path in paths)
             # if path_exists:
                 return False
     elif nx.has_path(G, node2, node1):
         length = nx.shortest_path_length(G, node2, node1)
-        if length >= 3:
+        if length >= 2:
             # #and nx.shortest_path_length(dag, node1, node2) >= 2:
             # paths = nx.all_simple_paths(summary_dag, node2, node1)
             # path_exists = any(len(path) >= 3 for path in paths)
