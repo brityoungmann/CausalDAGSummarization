@@ -1,0 +1,15 @@
+<Subnode of each supernode>
+0	0	1
+1	4
+9	6	8	11
+8	10	7
+4	9	5
+5	2	3
+<Superedge info>
+1	0	2
+9	9	2
+9	5	4
+8	4	4
+8	5	4
+4	0	4
+5	0	3
