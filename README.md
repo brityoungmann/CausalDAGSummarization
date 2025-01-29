@@ -3,13 +3,16 @@ Causal DAG Summarization: This code provides an implementation of our proposed C
 
 The code of our algorithm is given in the file called Greedy.py
 
-#Example usage:
-  //use other examples in the Example file
-  dag, k, nodes, recursive_basis , similarity_df = Examples.random_dag(50,0.3)
+# Example usage:
+//use other examples in the Example file
 
-  //get a summary causal DAG 
-  summary_dag_greedy, recursive_basis_greedy = Greedy.greedy(dag, nodes, recursive_basis, k, similarity_df)
-  Utils.show_dag(summary_dag_greedy, 'greedy')
+dag, k, nodes, recursive_basis , similarity_df = Examples.random_dag(50,0.3)
+
+//get a summary causal DAG
+
+summary_dag_greedy, recursive_basis_greedy = Greedy.greedy(dag, nodes, recursive_basis, k, similarity_df)
+
+Utils.show_dag(summary_dag_greedy, 'greedy')
 
 
 
