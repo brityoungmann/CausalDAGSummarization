@@ -1,6 +1,17 @@
 # Causal DAG Summarization
 Causal DAG Summarization: This code provides an implementation of our proposed CaGres algorithm. To run the code, use the example usage in the main.py file. 
 
+The code of our algorithm is given in the file called Greedy.py
+
+#Example usage:
+  //use other examples in the Example file
+  dag, k, nodes, recursive_basis , similarity_df = Examples.random_dag(50,0.3)
+
+  //get a summary causal DAG 
+  summary_dag_greedy, recursive_basis_greedy = Greedy.greedy(dag, nodes, recursive_basis, k, similarity_df)
+  Utils.show_dag(summary_dag_greedy, 'greedy')
+
+
 
 # Requirements
 contourpy==1.2.0
@@ -28,4 +39,6 @@ statsmodels==0.14.1
 sympy==1.12
 threadpoolctl==3.2.0
 tzdata==2023.3
+
+
 
