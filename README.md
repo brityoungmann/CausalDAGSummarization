@@ -4,6 +4,10 @@ This repository provides an implementation of the **CaGres** algorithm for summa
 
 The core algorithm is implemented in the `Greedy.py` file. To run the code, follow the example usage in `Main.py` or explore the examples provided in the `Examples.py` file.
 
+In the `Main.py` file, you'll find examples of calls for generating summary causal DAGs using the Random, Brute-Force, and K-Snap baselines.
+
+In the  `Examples.py` file, you will find the input causal DAGs examined in our paper. 
+
 
 ## How It Works
 
